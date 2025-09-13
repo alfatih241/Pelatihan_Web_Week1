@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'intro script';
+    src: url('../font/Intro_Script/IntroScriptDemo-Medium.otf');
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    font-family: 'intro script';
+    font-size: 30px;
+}
+
+.samping{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section1{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom:50px;
+}
+
+.samping a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.samping h1{
+   margin-right: 31%; 
+}
+
+.button{
+    margin-left: 29%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.section3{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 20px;
+}
+
+.section{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+button{
+    
+    padding: 10px;
+    background-color: white;
+}
+
+.section3 h1{
+    margin-right: 36%;
+}
+
+.section3 a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon{
+    margin-left: 30%;
+}
+
+.section3 i{
+    margin-left: 10px;
+}
+
+.bawah{
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+.bawah a{
+    margin-left: 25px;
+    color: black;
+}
