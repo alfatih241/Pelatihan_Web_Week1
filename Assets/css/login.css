@@ -1,0 +1,236 @@
+
+    /* Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+  /* Login title style */
+.google-title {
+  font-size: 3rem;    /* membuat teks lebih besar */
+  font-weight: 900;   /* membuat teks lebih tebal */
+}
+
+  /* Container with 2 halves */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+  /* Left side - white background */
+.left-side {
+    flex: 1;
+    background: #fff;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  /* Right side - light gray background */
+  .right-side {
+    flex: 1;
+    background: #d1d1d1;
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: center;
+  }
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/Intro_Script/IntroScriptDemo-Medium.otf');
+}
+
+  /* Logo style */
+  .logo {
+    font-family: 'MyCustomFont';
+    font-size: 32px;
+    padding: 0px 30px;
+    justify-content: space-between;
+  }
+
+  /* Middle form area vertical center */
+  .form-wrapper {
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Title */
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Paragraph */
+  p.description {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 15px;
+    color: #1c1c1c;
+    font-weight: 400;
+  }
+
+  /* Form label inline with forgot password link for password */
+  .input-group {
+    margin-bottom: 20px;
+    
+  }
+  .input-group label {
+    
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  /* Special container for password label and forgot link */
+  .label-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .label-forgot a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 400;
+  }
+  .label-forgot a:hover,
+  .label-forgot a:focus {
+    opacity: 0.8;
+  }
+
+  /* Inputs */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #333;
+    border-radius: 0;
+    outline-offset: 0;
+    font-family: inherit;
+  }
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #000;
+  }
+
+  /* Buttons */
+  button.login-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button.login-btn:hover,
+  button.login-btn:focus {
+    background-color: #222;
+  }
+
+  /* Google login button with border and Google icon */
+  button.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    background: white;
+    color: #1c1c1c;
+    font-size: 15px;
+    padding: 12px 0;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 400;
+  }
+  button.google-login svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+  button.google-login:hover,
+  button.google-login:focus {
+    background-color: #f1f1f1;
+  }
+
+  /* Signup prompt */
+  .signup-prompt {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #1c1c1c;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .signup-prompt a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000;
+    font-weight: 400;
+  }
+  .signup-prompt a:hover,
+  .signup-prompt a:focus {
+    opacity: 0.8;
+  }
+
+  /* Footer copy */
+  .footer-copy {
+    font-size: 12px;
+    color: #1c1c1c;
+    padding: 0px 25px;
+  }
+
+  /* Right side image placeholder with fallback */
+  .image-placeholder {
+  width: 60%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  background-color: #b5b5b5;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #878787;
+  font-size: 14px;
+  overflow: hidden; /* memastikan radius bekerja pada anak elemen */
+}
+  .image-placeholder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: contain; /* agar gambar sesuai dan tidak terpotong */
+  display: block; /* hapus gap bawah */
+}
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-side,
+    .right-side {
+      flex: unset;
+      width: 100%;
+      height: auto;
+      padding: 40px 30px;
+    }
+    .image-placeholder {
+      width: 100%;
+      max-width: unset;
+      height: 200px;
+    }
+  }

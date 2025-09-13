@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="Assets/css/login.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container" role = "main">
+      <aside class = "left-side" aria-label = "Login form section">
+        <div class = "logo" aria-label = "Company Logo"> Logo </div>
+        <section class = "form-wrapper" aria-labelledby = "login-title" style = "padding: 0px 70px;">
+          <h1 id = "login-title">Log In</h1>
+          <p class="description" >Lorem ipsum dolor sit amet adipiscing elit.</p>
+          <form action="#" method="POST" novalidate>
+            <div class="input-group">
+              <div class="label-forgot">
+                <label for="email" >Email<span aria-hidden="true">*</span></label>
+              </div>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="input-group">
+              <div class="label-forgot">
+                <label for="password">Password<span aria-hidden="true">*</span></label> 
+                <a href="#" tabindex="0">Forgot password?</a>
+              </div>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                autocomplete="current-password"
+                aria-required="true"
+              />
+            </div>
+            <button type="submit" class="login-btn" aria-label="Log in to your account" >Log In</button>
+            <button type="button" class="google-login" aria-label="Log in with Google">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 20 24">
+                <path fill="#0c0201ff" d="M12 11.998v3.564h5.187c-.233 1.453-1.713 4.264-5.187 4.264-3.125 0-5.667-2.578-5.667-5.75s2.542-5.75 5.667-5.75c1.777 0 2.964.755 3.646 1.403l2.48-2.39C16.11 7.034 14.33 6 12 6c-4.605 0-8.334 3.725-8.334 8.25s3.73 8.25 8.334 8.25c4.803 0 7.998-3.375 7.998-8.125 0-.55-.06-.95-.135-1.363H12z"/>
+              </svg>
+              Log In With Google
+            </button>
+          </form>
+          <div class="signup-prompt" aria-live="polite">
+            Don't have an account? <a href="#" tabindex="0">Sign Up</a>
+          </div>
+        </section>
+        <footer class="footer-copy" aria-label="Copyright Information">
+          @ 2025 Kelompok 8
+        </footer>
+      </aside>
+      <aside class = "right-side" aria-label = "Image section">
+        <div class="image-placeholder" role="img" aria-label="Placeholder showing a grey rectangle with a mountain icon in center and a sun icon top-left corner, representing image">
+          <img src = "Assets/image/fiksioner-v4-noimg.png" onerror="this.style.display='none';" />
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
